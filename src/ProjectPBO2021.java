@@ -2,11 +2,27 @@ import Controller.AllObjectController;
 import Model.AllObjectModel;
 
 import java.util.Scanner;
+import Gui.RecordGui;
 
 public class ProjectPBO2021 {
     static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
-        int pil;
+        dataDefault();
+        RecordGui g = new RecordGui();
+
+    }
+
+    private static void dataDefault() {
+        AllObjectController.recordcontroller.InsertRecord("Jatim", 19, 15, 39);
+        AllObjectController.recordcontroller.InsertRecord("Jateng", 21, 15, 81);
+        AllObjectController.recordcontroller.InsertRecord("Kalbar", 20, 16, 6);
+        AllObjectController.recordcontroller.InsertRecord("Jabar", 23, 16, 77);
+        AllObjectController.recordcontroller.InsertRecord("Sulteng", 31, 17, 40);
+        AllObjectController.recordcontroller.InsertRecord("Sumut", 2, 17, 76);
+
+    }
+
+        /*int pil;
         do {
             System.out.println("1. insert");
             System.out.println("2. update");
@@ -93,5 +109,5 @@ public class ProjectPBO2021 {
         }else{
             System.out.println("Data tidak ada");
         }
-    }
+    }*/
 }
